@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+
+{% block content %} 
+    <div class="inp">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="">TITLE</label><br>
+            <input type="text" placeholder="Enter the title" name="title" value="{{k.title}}"><br>
+            <label for="">Description</label><br>
+            <input type="text" placeholder="Enter the description" name="desc" value="{{k.desc}}"><BR>
+            <button>SUBMIT</button>
+        </form>
+    </div>
+{% endblock %}
